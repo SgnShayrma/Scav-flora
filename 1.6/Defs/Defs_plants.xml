@@ -1,0 +1,192 @@
+<?xml version="1.0" ?>
+<Defs>
+
+<ThingDef ParentName="CavePlantBase">
+    <defName>SGNGeotreewild</defName>
+    <label>Wild Geotree</label>
+	<description>Geotrees are not actually trees, but they got their name because of their resemblance to trees. Sweet fruits grows under its weirdly geometrical leaf-looking foliage.	</description>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>2</Beauty>
+      <BeautyOutdoors>2</BeautyOutdoors>
+      <Nutrition>0.5</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Geotree</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <pathCost>30</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.01</fertilityMin>
+      <fertilitySensitivity>0.15</fertilitySensitivity>
+      <growDays>20</growDays>
+      <dieIfLeafless>false</dieIfLeafless>
+      <harvestYield>2</harvestYield>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>SGNGeofruit</harvestedThingDef>
+      <neverBlightable>true</neverBlightable>
+      <visualSizeRange>0.8~1.5</visualSizeRange>
+      <topWindExposure>0.1</topWindExposure>
+      <cavePlantWeight>0.35</cavePlantWeight>
+      <purpose>Food</purpose>
+      <pollution>Any</pollution>
+    </plant>
+</ThingDef>
+
+<ThingDef ParentName="CavePlantBase">
+    <defName>SGNGeotree</defName>
+    <label>Geotree</label>
+	<description>Geotrees are not actually trees, but they got their name because of their resemblance to trees. Sweet fruits grows under its weirdly geometrical leaf-looking foliage.	</description>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>2</Beauty>
+      <BeautyOutdoors>2</BeautyOutdoors>
+      <Nutrition>0.5</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Geotree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.3</fertilityMin>
+      <fertilitySensitivity>0.15</fertilitySensitivity>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>SGNGeofruit</harvestedThingDef>
+      <harvestYield>2</harvestYield>
+	  <sowMinSkill>4</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <topWindExposure>0</topWindExposure>
+      <growDays>4</growDays>
+      <cavePlantWeight>0</cavePlantWeight>
+      <visualSizeRange>0.8~1.5</visualSizeRange>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+  
+  
+<ThingDef ParentName="CavePlantBase">
+    <defName>SGNGlowplantwild</defName>
+    <label>Wild Glowplant</label>
+	<description>A green, bioluminescent plant. Juice from this plant promotes chemical reactions, making it useful in crafting.</description>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>2</Beauty>
+      <BeautyOutdoors>2</BeautyOutdoors>
+      <Nutrition>0.5</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Glowplant</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+	<altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+	<plant>
+      <fertilityMin>0.01</fertilityMin>
+      <fertilitySensitivity>0.15</fertilitySensitivity>
+      <growDays>20</growDays>
+      <dieIfLeafless>false</dieIfLeafless>
+      <harvestYield>20</harvestYield>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>SGNBiochemFluid</harvestedThingDef>
+      <neverBlightable>true</neverBlightable>
+      <visualSizeRange>0.8~1.5</visualSizeRange>
+      <topWindExposure>0.1</topWindExposure>
+      <cavePlantWeight>0.35</cavePlantWeight>
+      <pollution>Any</pollution>
+    </plant>
+	    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+        <glowColor>(204,255,204,0)</glowColor>
+      </li>
+    </comps>
+</ThingDef>
+
+<ThingDef ParentName="CavePlantBase">
+    <defName>SGNGlowplant</defName>
+    <label>Glowplant</label>
+	<description>A green, bioluminescent plant. Juice from this plant promotes chemical reactions, making it useful in crafting.</description>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>2</Beauty>
+      <BeautyOutdoors>2</BeautyOutdoors>
+      <Nutrition>0.5</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Glowplant</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+	<altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.3</fertilityMin>
+      <fertilitySensitivity>0.15</fertilitySensitivity>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>SGNBiochemFluid</harvestedThingDef>
+      <harvestYield>20</harvestYield>
+	  <neverBlightable>true</neverBlightable>
+	  <sowMinSkill>6</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+		<li>Decorative</li>
+      </sowTags>
+      <topWindExposure>0</topWindExposure>
+      <growDays>4</growDays>
+      <cavePlantWeight>0</cavePlantWeight>
+      <visualSizeRange>0.8~1.5</visualSizeRange>
+    </plant>
+  </ThingDef>
+	
+	
+	
+	
+	
+<ThingDef ParentName="CavePlantBase">
+    <defName>SGNHydreed</defName>
+    <label>Hydreed</label>
+	<description>Hydreed is valued for its core named numberry, which contains numbing substance useful to make opioid drugs. This plant has multiple arms with watery bubbly fruits at the ends. It looks moist. </description>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>2</Beauty>
+      <BeautyOutdoors>2</BeautyOutdoors>
+      <Nutrition>0.5</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Hydreed</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.3</fertilityMin>
+      <fertilitySensitivity>0.15</fertilitySensitivity>
+      <harvestTag>Standard</harvestTag>
+      <drugForHarvestPurposes>True</drugForHarvestPurposes>
+      <harvestedThingDef>SGNNumberry</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+	  <sowMinSkill>6</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <topWindExposure>0</topWindExposure>
+      <growDays>5</growDays>
+      <cavePlantWeight>0</cavePlantWeight>
+      <visualSizeRange>0.8~1.5</visualSizeRange>
+      <drugForHarvestPurposes>True</drugForHarvestPurposes>
+    </plant>
+  </ThingDef>
+</Defs>

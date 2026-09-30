@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>SGNMorphine</defName>
+    <label>Morphine</label>
+    <description>A syringe with a very strong painkiller.</description>
+    <descriptionHyperlinks>
+
+      <HediffDef>MorphineEffect</HediffDef>
+
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Morphine</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	   <drawSize>0.5</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+     <SellPriceFactor>0.60</SellPriceFactor>
+      <WorkToMake>200</WorkToMake>
+      <MarketValue>500</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+       <drugCategory>Medical</drugCategory>
+     
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>40</baseIngestTicks>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>0</chairSearchRadius>
+        <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>MorphineEffect</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+				
+            </outcomeDoers>
+    </ingestible>
+	 
+    <recipeMaker>
+      <researchPrerequisite>MedicineProduction</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+	     <skillRequirements>
+        <Intellectual>4</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+	<SGNNumberry>2</SGNNumberry>
+      <Neutroamine>20</Neutroamine>
+    <Steel>2</Steel>
+	<MedicineIndustrial>1</MedicineIndustrial>
+    </costList>
+	 <comps>
+      <li Class="CompProperties_Drug">
+       <listOrder>170</listOrder>
+      </li>
+    </comps>
+    
+  </ThingDef>
+  
+  <!-- Эффект препарата -->
+  <HediffDef>
+    <defName>MorphineEffect</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>Morphine effect</label>
+    <labelNoun>Morphine effect</labelNoun>
+    <description>Very strong painkiller</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        
+	
+		<li>
+	
+		<minSeverity>0</minSeverity>
+	
+          <painFactor>0.1</painFactor>
+          <capMods>
+        <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.75</setMax>
+            </li>
+          
+        
+          
+          
+          </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <!-- При применении -->
+  
+  <ThoughtDef>
+    <defName>MorphineEffect</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>MorphineEffect</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+	
+      <li>
+        <label>Effect on morphine</label>
+        <description>Effect on morphine</description>
+        <baseMoodEffect>25</baseMoodEffect>
+      </li>
+	
+	  
+    </stages>
+  </ThoughtDef>
+  
+  
+  
+</Defs>

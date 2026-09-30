@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <RecipeDef>
+    <defName>SGNChemToNeutro</defName>
+    <label>process neutroamine</label>
+    <description>Process neutroamine from bio-chem fluid.</description>
+    <jobString>Processing neutroamine.</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workAmount>1500</workAmount>
+    <targetCountAdjustment>4</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SGNBiochemFluid</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SGNBiochemFluid</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Neutroamine>4</Neutroamine>
+    </products>
+    <skillRequirements>
+		<Intellectual>6</Intellectual>
+    </skillRequirements>
+    <workSkill>Intellectual</workSkill>
+	<researchPrerequisite>DrugProduction</researchPrerequisite>
+    <recipeUsers>
+		<li>DrugLab</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>SGNChemToNeutrobulk</defName>
+    <label>process bulk neutroamine</label>
+    <description>Process 12 neutroamine from bio-chem fluid.</description>
+    <jobString>Processing neutroamine.</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workAmount>2800</workAmount>
+    <targetCountAdjustment>12</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SGNBiochemFluid</li>
+          </thingDefs>
+        </filter>
+        <count>120</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SGNBiochemFluid</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Neutroamine>12</Neutroamine>
+    </products>
+    <skillRequirements>
+		<Intellectual>8</Intellectual>
+    </skillRequirements>
+    <workSkill>Intellectual</workSkill>
+	<researchPrerequisite>DrugProduction</researchPrerequisite>
+    <recipeUsers>
+		<li>DrugLab</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  
+</Defs>

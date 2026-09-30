@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ApparelLayerDef>
+    <defName>SGNCrystalLayer</defName>
+    <label>Crystal</label>
+    <drawOrder>290</drawOrder>
+  </ApparelLayerDef>
+
+ <ThingCategoryDef>
+    <defName>SGNCrystal</defName>
+    <label>Crystal</label>
+    <parent>Root</parent>
+  </ThingCategoryDef>
+  
+  <ThingDef Name="SGNCrystalworn" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <useHitPoints>true</useHitPoints>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <tickerType>Never</tickerType>
+    <pathCost>14</pathCost>
+    <techLevel>Neolithic</techLevel>
+    <tradeability>All</tradeability>
+	<apparel>
+	<wearPerDay>1</wearPerDay>
+	</apparel>
+    <thingCategories>
+      <li>SGNCrystal</li>
+    </thingCategories>
+    <tradeTags>
+	  <li>Exotic</li>
+      <li>ExoticMisc</li>
+      <li>SGNCrystal</li>
+    </tradeTags>
+	 <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+	  <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="SGNCrystalworn">
+    <defName>SGNturbCrystal</defName>
+    <label>Turbulent Crystal</label>
+    <description>It vibrates with energy. Increases move speed while stored on your body.</description>
+    <graphicData>
+      <texPath>Things/Item/Crystal/SGNturbCrystal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.7</drawSize>
+    </graphicData>
+    <statBases>
+      <Mass>0.1</Mass>
+      <MarketValue>320</MarketValue>
+    </statBases>
+    <apparel>
+      <countsAsClothingForNudity>true</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <bodyPartGroups>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <layers>
+        <li>SGNCrystalLayer</li>
+      </layers>
+    </apparel>
+	    <equippedStatOffsets>
+      <MoveSpeed>0.2</MoveSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+	
+	<ThingDef ParentName="SGNCrystalworn">
+    <defName>SGNsoothCrystal</defName>
+    <label>Soothing Crystal</label>
+    <description>It has a calming aura to it. fortifies mind while stored on your body.</description>
+    <graphicData>
+      <texPath>Things/Item/Crystal/SGNsoothCrystal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.7</drawSize>
+    </graphicData>
+    <statBases>
+      <Mass>0.1</Mass>
+      <MarketValue>320</MarketValue>
+    </statBases>
+    <apparel>
+      <countsAsClothingForNudity>true</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <bodyPartGroups>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <layers>
+        <li>SGNCrystalLayer</li>
+      </layers>
+    </apparel>
+	    <equippedStatOffsets>
+      <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+    </equippedStatOffsets>
+  </ThingDef>
+	
+		<ThingDef ParentName="SGNCrystalworn">
+    <defName>SGNreliefCrystal</defName>
+    <label>Relief Crystal</label>
+    <description>You feel a little numb holding it... Decreases pain while stored on your body.</description>
+    <graphicData>
+      <texPath>Things/Item/Crystal/SGNreliefCrystal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.7</drawSize>
+    </graphicData>
+    <statBases>
+      <Mass>0.1</Mass>
+      <MarketValue>320</MarketValue>
+    </statBases>
+    <apparel>
+      <countsAsClothingForNudity>true</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <bodyPartGroups>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <layers>
+        <li>SGNCrystalLayer</li>
+      </layers>
+    </apparel>
+	    <equippedStatOffsets>
+      <PainShockThreshold>0.2</PainShockThreshold>
+    </equippedStatOffsets>
+  </ThingDef>
+  
+  		<ThingDef ParentName="SGNCrystalworn">
+    <defName>SGNbloodCrystal</defName>
+    <label>Blood Crystal</label>
+    <description>Slowly increases your regeneration abilities while stored on your body.</description>
+    <graphicData>
+      <texPath>Things/Item/Crystal/SGNbloodCrystal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.7</drawSize>
+    </graphicData>
+    <statBases>
+      <Mass>0.1</Mass>
+      <MarketValue>320</MarketValue>
+    </statBases>
+    <apparel>
+      <countsAsClothingForNudity>true</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <bodyPartGroups>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <layers>
+        <li>SGNCrystalLayer</li>
+      </layers>
+    </apparel>
+	    <equippedStatOffsets>
+      <InjuryHealingFactor>0.2</InjuryHealingFactor>
+    </equippedStatOffsets>
+  </ThingDef>
+  
+  
+</Defs>

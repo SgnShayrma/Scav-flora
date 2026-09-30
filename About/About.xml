@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<packageId>SGN.Scavflora</packageId>
+	<name>Scav flora</name>
+	<author>Sgnshayrma</author>
+	<description>This mod adds plants from game Cas:unknown formerly known as scav prototype</description>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<modVersion>0.2</modVersion>
+	<modDependencies>
+    <li>
+      <packageId>ludeon.rimworld.biotech</packageId>
+      <displayName>Biotech</displayName>
+    </li>
+  </modDependencies>
+	
+	</ModMetaData>
