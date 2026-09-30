@@ -58,7 +58,7 @@
     <label>Turbulent Crystal</label>
     <description>It vibrates with energy. Increases move speed while stored on your body.</description>
     <graphicData>
-      <texPath>Things/Item/Crystal/SGNturbCrystal</texPath>
+      <texPath>Crystal/SGNturbCrystal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.7</drawSize>
     </graphicData>
@@ -87,7 +87,7 @@
     <label>Soothing Crystal</label>
     <description>It has a calming aura to it. fortifies mind while stored on your body.</description>
     <graphicData>
-      <texPath>Things/Item/Crystal/SGNsoothCrystal</texPath>
+      <texPath>Crystal/SGNsoothCrystal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.7</drawSize>
     </graphicData>
@@ -116,7 +116,7 @@
     <label>Relief Crystal</label>
     <description>You feel a little numb holding it... Decreases pain while stored on your body.</description>
     <graphicData>
-      <texPath>Things/Item/Crystal/SGNreliefCrystal</texPath>
+      <texPath>Crystal/SGNreliefCrystal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.7</drawSize>
     </graphicData>
@@ -145,7 +145,7 @@
     <label>Blood Crystal</label>
     <description>Slowly increases your regeneration abilities while stored on your body.</description>
     <graphicData>
-      <texPath>Things/Item/Crystal/SGNbloodCrystal</texPath>
+      <texPath>Crystal/SGNbloodCrystal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.7</drawSize>
     </graphicData>

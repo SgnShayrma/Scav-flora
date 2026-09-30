@@ -5,7 +5,7 @@
     <label>Geofruit</label>
     <description>Geofruits are small, pear-shaped blue fruit that grows on geo-trees. Low in calories and decays fast.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/PlantFoodRaw/SGNGeofruit</texPath>
+      <texPath>Berries/SGNGeofruit</texPath>
     </graphicData>
     <statBases>
 	<Nutrition>0.25</Nutrition>
@@ -31,7 +31,7 @@
     <description>Advanced chemical compound that greatly promotes chemical reactions and is able to mend certain materials together, or even melt them. Very commonly used in crafting.</description>
     <possessionCount>10</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Resource/SGNBiochemFluid</texPath>
+      <texPath>SGNBiochemFluid</texPath>
 	        <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <stackLimit>300</stackLimit>
@@ -53,7 +53,7 @@
     <label>Numberry</label>
     <description>Numberry is a purplish-blue piece of plant tissue that can be obtained from a hydreed. It has a dissatisfying taste and texture and is presumably as mushy as the rest of the plant is, has an odd weight-absorbing property and an off-putting taste. Seems to have trace opiate concentration.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/PlantFoodRaw/SGNNumberry</texPath>
+      <texPath>Berries/SGNNumberry</texPath>
     </graphicData>
     <statBases>
       <MarketValue>1.6</MarketValue>

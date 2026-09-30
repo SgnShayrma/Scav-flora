@@ -12,7 +12,7 @@
       <Nutrition>0.5</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>Things/Plant/Geotree</texPath>
+      <texPath>Geotree</texPath>
 	  <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <selectable>true</selectable>
@@ -47,7 +47,7 @@
       <Nutrition>0.5</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>Things/Plant/Geotree</texPath>
+      <texPath>Geotree</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <selectable>true</selectable>
@@ -84,7 +84,7 @@
       <Nutrition>0.5</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>Things/Plant/Glowplant</texPath>
+      <texPath>Glowplant</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
 	<altitudeLayer>Item</altitudeLayer>
@@ -124,7 +124,7 @@
       <Nutrition>0.5</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>Things/Plant/Glowplant</texPath>
+      <texPath>Glowplant</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
 	<altitudeLayer>Item</altitudeLayer>
@@ -165,7 +165,7 @@
       <Nutrition>0.5</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>Things/Plant/Hydreed</texPath>
+      <texPath>Hydreed</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <selectable>true</selectable>
